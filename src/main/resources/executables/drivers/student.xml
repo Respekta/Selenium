@@ -1,0 +1,30 @@
+<students>
+    <student>
+        <imie lang="en">Jan</imie>
+        <nazwisko class="red">Piwniczanka</nazwisko>
+        <nazwisko>Piwniczanka</nazwisko>
+        <kierunek>Fizyka</kierunek>
+        <rok>6</rok>
+        <grupa>2</grupa>
+    </student>
+</students>
+
+<!--
+parent - kazdy element ma jednego rodzica
+children - kazdy element moze mieć zero jedno lub więcej bachorkow
+sibling - gałęzie, które mają tego samego rodzica
+ancestors - rodzic gałęzi oraz rodzic rodzica gałęzi itd
+descendants - dziecko gałęzi oraz dzieci dziecka gałęzi
+
+szukamy imie
+/students/student/imie
+//imie
+/students//imie
+//imie[text()='Jan']
+//kierunek[text()='Fizyka']
+
+//nazwisko[@lang='en']
+//nazwisko[@class='red']
+//a - znajdziemy wszystkie linki
+//*[text()=Piwniczanka'] - gwiazdka czyli znajdz dowolna gałąź ktorej tekst jest = Piwniczanka
+-->
